@@ -24,7 +24,7 @@
 - Enumeration
 - Typedef defined DataType
 
-### Naming convention 
+### 2. Naming convention 
 
 - The class name should be a noun.
 - Use upper case letters as word separators, lower case for the rest of the word in the class name.
@@ -68,7 +68,7 @@ int main()
 ```
 
 
-### Type Conversion in C++
+### 3. Type Conversion in C++
 A type cast is basically a conversion from one type to another. There are two types of type conversion:
 
 **1. Implicit Type Conversion Also known as ‘automatic type conversion’.**
@@ -128,8 +128,8 @@ int main()
 
 ```
 
-### Discussion 
+### 4. Discussion 
 
-### Reference: 
+### 5. Reference: 
 [Naming convention ](https://www.geeksforgeeks.org/naming-convention-in-c/)
 [Type Conversion in C++] (https://www.geeksforgeeks.org/type-conversion-in-c/)

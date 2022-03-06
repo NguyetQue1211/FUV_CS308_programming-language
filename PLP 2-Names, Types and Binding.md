@@ -134,7 +134,7 @@ output
 5.4
 12.5
 ```
-### Binding
+## Binding
 By default early binding happens in C++. Late binding (discussed below) is achieved with the help of virtual keyword) 
 - Early binding: This is compile time polymorphism. Here it directly associates an address to the function call. For function overloading it is an example of early binding.
 - Late binding. This is run time polymorphism. In this type of binding the compiler adds code that identifies the object type at runtime then matches the call with the right function definition. This is achieved by using virtual function.

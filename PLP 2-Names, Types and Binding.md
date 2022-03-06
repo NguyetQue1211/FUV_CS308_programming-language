@@ -1,4 +1,4 @@
-### 1. C++ Data types
+### 1. C++ Data types and keywords
 
 #### Data types in C++ is mainly divided into three types: 
 
@@ -23,6 +23,12 @@
 - Union
 - Enumeration
 - Typedef defined DataType
+
+**C++ Keywords**
+
+Keywords (also known as reserved words) have special meaning to the C++ compiler and are always written or typed in short(lower) cases. here are keywords in C++: asm, double, new, auto, else, operator, template, break,	enum, private, this,
+case, extern, protected, throw, catch, float, public, try, continue, if, signed, virtual, default, inline, sizedof, void
+delete, int, static, volatile, do, long, struct, while 
 
 ### 2. Naming convention 
 
@@ -129,6 +135,7 @@ int main()
 ```
 
 ### 4. Discussion 
+
 
 ### 5. Reference: 
 

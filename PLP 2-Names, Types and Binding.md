@@ -131,5 +131,7 @@ int main()
 ### 4. Discussion 
 
 ### 5. Reference: 
+
 [Naming convention ](https://www.geeksforgeeks.org/naming-convention-in-c/)
-[Type Conversion in C++] (https://www.geeksforgeeks.org/type-conversion-in-c/)
+
+[Type Conversion in C++](https://www.geeksforgeeks.org/type-conversion-in-c/)

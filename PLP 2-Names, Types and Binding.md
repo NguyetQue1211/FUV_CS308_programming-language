@@ -1,7 +1,7 @@
-## Names, Types and Binding
+# Names, Types and Binding
 
-### Naming 
-#### Rules
+## Naming 
+### Rules
 
 Identifiers in C++ can be composed of letters, digits, and the underscore character. 
 
@@ -29,10 +29,14 @@ About naming convention, there are some community's standard:
 - The global constants should be all capital letters separated with ‘_’.
 - No special character is allowed in the file name except for underscore (‘_’) and dash (‘-‘).
 
-#### Reserved words
-Keywords (also known as reserved words) have special meaning to the C++ compiler and are always written or typed in short(lower) cases. here are keywords in C++: asm, double, new, auto, else, operator, template, break,	enum, private, this,
+### Reserved words
+Keywords (also known as reserved words) have special meaning to the C++ compiler and are always written or typed in short(lower) cases. here are keywords in C++: 
+
+```
+asm, double, new, auto, else, operator, template, break,	enum, private, this,
 case, extern, protected, throw, catch, float, public, try, continue, if, signed, virtual, default, inline, sizedof, void
 delete, int, static, volatile, do, long, struct, while,..
+```
 
 **Examples:** 
 ```
@@ -47,9 +51,9 @@ String *pName= new String;
 class OdeSolver
 ```
 
-### Typing
+## Typing
 
-#### Data types in C++ is mainly divided into three types: 
+### Data types in C++ is mainly divided into three types: 
 
 **Primitive Data Types:** These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char , float, bool etc. Primitive data types available in C++ are: 
 - Integer
@@ -74,11 +78,11 @@ class OdeSolver
 - Typedef defined DataType
 
 
-#### C++ is statically typed. Languages check the types and look for type errors during runtime.
+### C++ is statically typed. Languages check the types and look for type errors during runtime.
 
-#### C++ is a strongly typed. however, C++ allow some implicit conversions between types, making it “not quite as strong as it could be”-typed
+### C++ is a strongly typed. however, C++ allow some implicit conversions between types, making it “not quite as strong as it could be”-typed
 
-#### C++ has both implicit and explicit conversion. 
+### C++ has both implicit and explicit conversion. 
 
 A type cast is basically a conversion from one type to another. There are two types of type conversion:
 
@@ -94,11 +98,49 @@ C++ supports four types of casting:
 * Const Cast
 * Reinterpret Cast
 
-#### Mutable and Immutable data
-##### Mutable
-##### Immutable
-### Discussion 
-If C++ is a strongly typed language, then why does it allow these type of implicit conversions?
+### Mutable and Immutable data
+- Immutable. In C++, an object is immutable if (1) and either (2) or (3) are met: 
+1. It has no members declared mutable that are mutated by const member functions
+2. It is declared const
+3. const member functions do not use const_cast to remove const qualification in order to mutate any members
+- Mutable. If you have a const reference or pointer to an object, you cannot modify that object in any way except when and how it is marked ```mutable```. This keyword can only be applied to non-static and non-const data members of a class. If a data member is declared mutable, then it is legal to assign a value to this data member from a const member function.
+
+### Operators in C++ can be classified into 6 types:
+
+- Arithmetic Operators
+- Assignment Operators
+- Relational Operators
+- Logical Operators
+- Bitwise Operators
+- Other Operators
+
+Mixed type operations allowed. Let's say, when an add/divide int and float data type together, the result will be converted into float
+
+```
+#include <iostream>
+
+int main() 
+
+{
+    int a = 5;
+    float b = 0.4;
+    std::cout << a + b << std::endl;
+    std::cout << a/b << std::endl;
+}
+```
+
+output 
+```
+5.4
+12.5
+```
+### Binding
+By default early binding happens in C++. Late binding (discussed below) is achieved with the help of virtual keyword) 
+- Early binding: This is compile time polymorphism. Here it directly associates an address to the function call. For function overloading it is an example of early binding.
+- Late binding. This is run time polymorphism. In this type of binding the compiler adds code that identifies the object type at runtime then matches the call with the right function definition. This is achieved by using virtual function.
+
+
+
 
 ### Reference: 
 
@@ -109,3 +151,5 @@ If C++ is a strongly typed language, then why does it allow these type of implic
 [3]. C++ Primer, Fifth Edition
 
 [4]. https://www.youtube.com/watch?v=ngvJ2Z3VBpk
+
+[5]. https://docs.microsoft.com/en-us/cpp/cpp/mutable-data-members-cpp?view=msvc-170

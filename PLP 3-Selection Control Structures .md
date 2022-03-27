@@ -179,6 +179,9 @@ int main()
 
 ## references: 
 [0]. C++ Crash Course by JOSH LOSPINOSO
+
 [1]. [Short-circuiting in C++](https://www.geeksforgeeks.org/short-circuiting-in-c-and-linux/)
+
 [2]. [Dangling else](https://en.wikipedia.org/wiki/Dangling_else)
+
 [3]. [C++ Switch](https://www.w3schools.com/cpp/cpp_switch.asp)

@@ -3,9 +3,40 @@
 ## Loops
 C++ programming language provides the following type of loops to handle looping requirements
 * while loop: Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
-* for loop: Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+```
+while (condition) {
+// The statement in the body of the loop 
+// executes upon each iteration
+}
+```
+Before executing an iteration of the loop, the while loop evaluates the condition expression. If true, the loop continues. If false, the loop terminates.
+```
+#include <cstdio>
+#include <cstdint>
+
+bool double_return_overflow(uint8_t& x) {
+  const auto original = x;
+  x *= 2;
+  return original > x;
+}
+int main() {
+  uint8_t x{1}; 
+  printf("uint8_t:\n===\n");
+  while (!double_return_overflow(x)w) {
+    printf("%u ", x);
+  }
+}
+```
 * do..while loop: Like a ‘while’ statement, except that it tests the condition at the end of the loop body.
+```
+do {
+  // The statement in the body of the loop
+  // executes upon each iteration
+} while (condition);
+```
+Because the condition evaluates at the end of a loop, you guarantee that the loop will execute at least once.
 * nested loops: You can use one or more loop inside any another ‘while’, ‘for’ or ‘do..while’ loop.
+* for loop: Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
 
 ## Function
 ### Declaration

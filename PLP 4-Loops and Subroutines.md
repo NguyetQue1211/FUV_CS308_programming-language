@@ -69,39 +69,229 @@ for(range-declaration : range-expression) {
   // The statement in the body of the loop 
   // executes upon each iteration
 }
-```
+``
 
 * nested loops: You can use one or more loop inside any another ‘while’, ‘for’ or ‘do..while’ loop.
 
 ## Function
-### Declaration
-A C++ function consist of two parts:
-- Declaration: the return type, the name of the function, and parameters (if any)
-- Definition: the body of the function (code to be executed)
-Example:
+
+A function is a block of code that performs a specific task.
+
+Suppose we need to create a program to create a circle and color it. We can create two functions to solve this problem:
+
+a function to draw the circle
+a function to color the circle
+Dividing a complex problem into smaller chunks makes our program easy to understand and reusable.
+
+There are two types of function:
+
+- Standard Library Functions: Predefined in C++
+- User-defined Function: Created by users
+
+
+### Function Declarations
+
+The syntax to declare a function is:
+
 ```
-void myFunction() { // declaration
-  // the body of the function (definition)
+returnType functionName (parameter1, parameter2,...) {
+    // function body   
 }
 ```
-Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.
+Here's an example of a function declaration.
+```
+// function declaration
+void greet() {
+    cout << "Hello World";
+}
+```
+Here,
 
-### Calling a Function
-While creating a C++ function, you give a definition of what the function has to do. To use a function, you will have to call or invoke that function.
+- the name of the function is greet()
+- the return type of the function is void
+- the empty parentheses mean it doesn't have any parameters
+- the function body is written inside {}
 
-When a program calls a function, program control is transferred to the called function. A called function performs defined task and when it’s return statement is executed or when its function-ending closing brace is reached, it returns program control back to the main program.
+### Calling a function 
 
-To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, then you can store returned value. 
+In the above program, we have declared a function named greet(). To use the greet() function, we need to call it.
+
+Here's how we can call the above greet() function.
+
+```
+int main() {
+     
+    // calling a function   
+    greet(); 
+
+}
+```
+
+**Example 1**
+```
+#include <iostream>
+using namespace std;
+
+// declaring a function
+void greet() {
+    cout << "Hello there!";
+}
+
+int main() {
+
+    // calling the function
+    greet();
+
+    return 0;
+}
+
+//output: Hello there!
+```
+
+### Function Parameter
+As mentioned above, a function can be declared with parameters (arguments). A parameter is a value that is passed when declaring a function.
+
+For example, let us consider the function below:
+```
+void printNum(int num) {
+    cout << num;
+}
+```
+Here, the int variable num is the function parameter.
+We pass a value to the function parameter while calling the function.
+
+```
+int main() {
+    int n = 7;
+    
+    // calling the function
+    // n is passed to the function as argument
+    printNum(n);
+    
+    return 0;
+}
+```
+
+### Return statement 
+
+In the above programs, we have used void in the function declaration. For example,
+
+```
+void displayNumber() {
+    // code
+}
+```
+
+This means the function is not returning any value.
+
+It's also possible to return a value from a function. For this, we need to specify the returnType of the function during function declaration.
+
+Then, the return statement can be used to return a value from a function.
+
+For example,
+```
+int add (int a, int b) {
+   return (a + b);
+}
+```
+
+Here, we have the data type int instead of void. This means that the function returns an int value.
+
+The code return (a + b); returns the sum of the two parameters as the function value.
+
+The return statement denotes that the function has ended. Any code after return inside the function is not executed.
+
+### Function Prototype
+
+In C++, the code of function declaration should be before the function call. However, if we want to define a function after the function call, we need to use the function prototype. For example,
+
+```
+// function prototype
+void add(int, int);
+
+int main() {
+    // calling the function before declaration.
+    add(5, 3);
+    return 0;
+}
+
+// function definition
+void add(int a, int b) {
+    cout << (a + b);
+}
+```
+In the above code, the function prototype is:
+
+```
+void add(int, int);
+```
+This provides the compiler with information about the function name and its parameters. That's why we can use the code to call a function before the function has been defined.
+
+The syntax of a function prototype is:
+
+```
+returnType functionName(dataType1, dataType2, ...);
+```
 
 ## Recursive functions
+
 A function that calls by itself is known as Recursive function. They are just a function that is getting invoked repeatedly. Recursion has got a problem-solving tool, where it divides the larger problems into simple tasks and working out individually to follow an individual sequence.
 
-### Syntax of Recursive Function in C++
+```
+void recurse()
+{
+    ... .. ...
+    recurse();
+    ... .. ...
+}
 
-### 
+int main()
+{
+    ... .. ...
+    recurse();
+    ... .. ...
+}
+```
 
+The recursion continues until some condition is met.
+
+To prevent infinite recursion, if...else statement (or similar approach) can be used where one branch makes the recursive call and the other doesn't.
+
+Example: Factorial of a Number Using Recursion
+```
+// Factorial of n = 1*2*3*...*n
+
+#include <iostream>
+using namespace std;
+
+int factorial(int);
+
+int main() {
+    int n, result;
+
+    cout << "Enter a non-negative number: ";
+    cin >> n;
+
+    result = factorial(n);
+    cout << "Factorial of " << n << " = " << result;
+    return 0;
+}
+
+int factorial(int n) {
+    if (n > 1) {
+        return n * factorial(n - 1);
+    } else {
+        return 1;
+    }
+}
+
+// output: 
+// Enter a non-negative number: 4
+// Factorial of 4 = 24
+```
 
 ## References: 
 
 [2]. https://www.tutorialspoint.com/cplusplus/cpp_functions.htm
 [3]. https://www.educba.com/recursive-function-in-c-plus-plus/
+[4]. https://www.programiz.com/cpp-programming/function

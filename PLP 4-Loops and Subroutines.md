@@ -2,7 +2,8 @@
 
 ## Loops
 C++ programming language provides the following type of loops to handle looping requirements
-### while loop: Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+### while loop
+Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
 ```
 while (condition) {
 // The statement in the body of the loop 
@@ -30,7 +31,8 @@ int main() {
   }
 }
 ```
-### do..while loop: Like a ‘while’ statement, except that it tests the condition at the end of the loop body.
+### do..while loop: 
+Like a ‘while’ statement, except that it tests the condition at the end of the loop body.
 ```
 do {
   // The statement in the body of the loop
@@ -56,7 +58,8 @@ printf("%u ", x);
 }
 ```
 
-### for loop: Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+### for loop: 
+Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.
 The for loop is an iteration statement containing three special expressions: initialization, conditional, and iteration, as described in the sections that follow.
 1. The Initialization Expression: is like the initialization of if: it executes only once before the first iteration executes. Any objects declared within the initialization expression have lifetimes bound by the scope of the for loop.
 2. The Conditional Expression: evaluates just before each iteration of the loop. If the conditional evaluates to true, the loop continues to execute. If the conditional evaluates to false, the loop terminates (this behavior is exactly like the conditional of the while and do-while loops).Like if and switch statements, for permits you to initialize objects with scope equal to the statement’s.
@@ -78,7 +81,8 @@ for(range-declaration : range-expression) {
 }
 ```
 
-### nested loops: You can use one or more loop inside any another ‘while’, ‘for’ or ‘do..while’ loop.
+### nested loops: 
+You can use one or more loop inside any another ‘while’, ‘for’ or ‘do..while’ loop.
 
 ## Function
 

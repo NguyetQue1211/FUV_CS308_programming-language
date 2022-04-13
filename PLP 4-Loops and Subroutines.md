@@ -10,6 +10,9 @@ while (condition) {
 }
 ```
 Before executing an iteration of the loop, the while loop evaluates the condition expression. If true, the loop continues. If false, the loop terminates.
+
+**Example**
+
 ```
 #include <cstdio>
 #include <cstdint>
@@ -35,6 +38,8 @@ do {
 } while (condition);
 ```
 Because the condition evaluates at the end of a loop, you guarantee that the loop will execute at least once.
+
+**Example**
 ```
 #include <cstdio>
 #include <cstdint>
@@ -62,14 +67,16 @@ for(initialization; conditional; iteration) {
   // executes upon each iteration
 }
 ```
-- Iterating with an Index: The for loops are excellent at iterating over an array-like object’s constituent elements. You use an auxiliary index variable to iterate over the range of valid indices for the array-like object. You can use this index to interact with each array element in sequence.
-- Ranged-Based for Loops: The range-based for loop iterates over a range of values without needing an index variable. A range (or range expression) is an object that the range- based for loop knows how to iterate over. Many C++ objects are valid range expressions, including arrays. 
+Iterating with an Index: The for loops are excellent at iterating over an array-like object’s constituent elements. You use an auxiliary index variable to iterate over the range of valid indices for the array-like object. You can use this index to interact with each array element in sequence.
+
+Ranged-Based for Loops: The range-based for loop iterates over a range of values without needing an index variable. A range (or range expression) is an object that the range- based for loop knows how to iterate over. Many C++ objects are valid range expressions, including arrays. 
+
 ```
 for(range-declaration : range-expression) { 
   // The statement in the body of the loop 
   // executes upon each iteration
 }
-``
+```
 
 * nested loops: You can use one or more loop inside any another ‘while’, ‘for’ or ‘do..while’ loop.
 
@@ -127,7 +134,7 @@ int main() {
 }
 ```
 
-**Example 1**
+**Example**
 ```
 #include <iostream>
 using namespace std;
@@ -151,7 +158,8 @@ int main() {
 ### Function Parameter
 As mentioned above, a function can be declared with parameters (arguments). A parameter is a value that is passed when declaring a function.
 
-For example, let us consider the function below:
+**Example**
+
 ```
 void printNum(int num) {
     cout << num;
@@ -159,6 +167,8 @@ void printNum(int num) {
 ```
 Here, the int variable num is the function parameter.
 We pass a value to the function parameter while calling the function.
+
+**Example**
 
 ```
 int main() {
@@ -188,7 +198,8 @@ It's also possible to return a value from a function. For this, we need to speci
 
 Then, the return statement can be used to return a value from a function.
 
-For example,
+**Example**
+
 ```
 int add (int a, int b) {
    return (a + b);
@@ -203,7 +214,9 @@ The return statement denotes that the function has ended. Any code after return 
 
 ### Function Prototype
 
-In C++, the code of function declaration should be before the function call. However, if we want to define a function after the function call, we need to use the function prototype. For example,
+In C++, the code of function declaration should be before the function call. However, if we want to define a function after the function call, we need to use the function prototype.
+
+**Example**
 
 ```
 // function prototype
@@ -257,7 +270,7 @@ The recursion continues until some condition is met.
 
 To prevent infinite recursion, if...else statement (or similar approach) can be used where one branch makes the recursive call and the other doesn't.
 
-Example: Factorial of a Number Using Recursion
+**Example** Factorial of a Number Using Recursion
 ```
 // Factorial of n = 1*2*3*...*n
 

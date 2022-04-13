@@ -250,7 +250,7 @@ The syntax of a function prototype is:
 returnType functionName(dataType1, dataType2, ...);
 ```
 
-## Recursive functions
+### Recursive functions
 
 A function that calls by itself is known as Recursive function. They are just a function that is getting invoked repeatedly. Recursion has got a problem-solving tool, where it divides the larger problems into simple tasks and working out individually to follow an individual sequence.
 
@@ -307,8 +307,97 @@ int factorial(int n) {
 // Factorial of 4 = 24
 ```
 
-## References: 
+## Pass by 
+In C++, we can pass parameters to a function either by pointers or by reference. In both cases, we get the same result. So, what is the difference between Passing by Pointer and Passing by Reference in C++?
 
-[2]. https://www.tutorialspoint.com/cplusplus/cpp_functions.htm
-[3]. https://www.educba.com/recursive-function-in-c-plus-plus/
-[4]. https://www.programiz.com/cpp-programming/function
+Lets first understand what Passing by Pointer and Passing by Reference in C++ mean:
+1) Passing by Pointer: Here, the memory location of the variables is passed to the parameters in the function, and then the operations are performed.
+
+```
+#include <iostream>
+using namespace std;
+ 
+void swap(int *x, int *y)
+{
+    int z = *x;
+    *x = *y;
+    *y = z;
+}
+ 
+// Driver Code
+int main()
+{
+    int a = 45, b = 35;
+    cout << "Before Swap\n";
+    cout << "a = " << a << " b = " << b << "\n";
+ 
+    swap(&a, &b);
+ 
+    cout << "After Swap with pass by pointer\n";
+    cout << "a = " << a << " b = " << b << "\n";
+}
+```
+
+```
+//output
+Before Swap
+a = 45 b = 35
+After Swap with pass by pointer
+a = 35 b = 45
+```
+
+2) Passing by Reference: It allows a function to modify a variable without having to create a copy of it. We have to declare reference variables. The memory location of the passed variable and parameter is the same and therefore, any change to the parameter reflects in the variable as well
+
+```
+#include <iostream>
+using namespace std;
+void swap(int& x, int& y)
+{
+    int z = x;
+    x = y;
+    y = z;
+}
+ 
+int main()
+{
+    int a = 45, b = 35;
+    cout << "Before Swap\n";
+    cout << "a = " << a << " b = " << b << "\n";
+ 
+    swap(a, b);
+ 
+    cout << "After Swap with pass by reference\n";
+    cout << "a = " << a << " b = " << b << "\n";
+}
+```
+
+```
+//output
+Before Swap
+a = 45 b = 35
+After Swap with pass by reference
+a = 35 b = 45
+```
+
+**Difference Between Reference Variable and Pointer Variable**
+
+A reference is the same object, just with a different name and a reference must refer to an object. Since references can’t be NULL, they are safer to use. 
+
+A pointer can be re-assigned while a reference cannot, and must be assigned at initialization only.
+The pointer can be assigned NULL directly, whereas the reference cannot.
+Pointers can iterate over an array, we can use increment/decrement operators to go to the next/previous item that a pointer is pointing to.
+A pointer is a variable that holds a memory address. A reference has the same memory address as the item it references.
+A pointer to a class/struct uses ‘->’ (arrow operator) to access its members whereas a reference uses a ‘.’ (dot operator)
+A pointer needs to be dereferenced with * to access the memory location it points to, whereas a reference can be used directly.
+
+## References: 
+[0]. C++ Crash Course by JOSH LOSPINOSO
+
+[1]. [C++ Functions from tutorialspoint.com](https://www.tutorialspoint.com/cplusplus/cpp_functions.htm)
+
+[2]. [C++ Functions from programz.com](https://www.programiz.com/cpp-programming/function)
+
+
+[3]. [C++ Recursion](https://www.programiz.com/cpp-programming/recursion)
+
+[4]. [Passing By Pointer Vs Passing By Reference in C++](https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/)

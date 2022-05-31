@@ -60,3 +60,5 @@ A C++ comment is written in one of the following ways:
 - The // (two slashes) characters, followed by any sequence of characters. A new line not immediately preceded by a backslash terminates this form of comment. Therefore, it is commonly called a "single-line comment."
 - The comment characters (/*, */, and //) have no special meaning within a character constant, string literal, or comment. Comments using the first syntax, therefore, cannot be nested.
 
+### References: 
+[0]. C++ Crash Course by JOSH LOSPINOSO

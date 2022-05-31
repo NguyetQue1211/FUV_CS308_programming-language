@@ -6,4 +6,4 @@ This repo stores all of my notes when learning C++, and for those who want to le
 3. [Selection Control Structures in C++](https://github.com/NguyetQue1211/FUV_CS308_programming-language/blob/main/PLP%203-Selection%20Control%20Structures%20.md)
 4. [Loops and Subroutines in C++](https://github.com/NguyetQue1211/FUV_CS308_programming-language/blob/main/PLP%204-Loops%20and%20Subroutines.md)
 5. [Objects and Classes](https://github.com/NguyetQue1211/FUV_CS308_programming-language/blob/main/PLP%205%20-Objects%20and%20Classes.md)
-6. 
+6. [Develop "Driving Car" Game with GUI in C++ using SDL2, SDL2_image, SDL2_mixer framework](https://github.com/NguyetQue1211/FUV_CS308_programming-language/tree/main/Game)

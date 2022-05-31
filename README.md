@@ -25,7 +25,7 @@ Apply C++ Knowledge to build a simple "Driving Car" Game that allows users to na
 * Display many cars in the opposite direction (obstacles)
 * Sound Background
 
-## Supportive framework
+## Supportive frameworks
 * [SDL2](https://www.libsdl.org)
 * [SDL2 image](https://www.libsdl.org/projects/SDL_image/)
 * [SDL2 mixer](https://www.libsdl.org/projects/SDL_mixer/)

@@ -1,8 +1,8 @@
 # Selection Control Structures in C++
 
 ## Boolean Types
-- Boolean types have two states: true and false. The sole Boolean type is bool. Integer types and the bool types convert readily: the true state converts to 1, and false converts to 0. Any non-zero integer converts to true, and 0 con- verts to false.
-- To initialize Boolean types, we use two Boolean literals, true and false.
+* Boolean types have two states: true and false. The sole Boolean type is bool. Integer types and the bool types convert readily: the true state converts to 1, and false converts to 0. Any non-zero integer converts to true, and 0 con- verts to false.
+* To initialize Boolean types, we use two Boolean literals, true and false.
 
 ## Conditional statements
 Conditional statements allow you to make decisions in your programs. These decisions rest on Boolean expressions, which evaluate to true or false. For example, you can use comparison operators, such as “greater than” or “not equal to,” to build Boolean expressions.

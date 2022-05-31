@@ -8,10 +8,14 @@ This repo stores all of my notes when learning C++, and for those who want to le
 5. [Objects and Classes](https://github.com/NguyetQue1211/FUV_CS308_programming-language/blob/main/PLP%205%20-Objects%20and%20Classes.md)
 6. [Develop "Driving Car" Game with GUI in C++ using SDL2, SDL2_image, SDL2_mixer framework](https://github.com/NguyetQue1211/FUV_CS308_programming-language/tree/main/Game)
 
-# Project: Develop "Driving Car" Game with GUI in C++ using SDL2, SDL2_image, SDL2_mixer framework
+# Final Project
 As mentioned above, this project is part of my C++ learning journey and you can use it as a reference in case you want to build such a GUI Game using SDL2 Framework. 
 ## Project goals: 
 Apply C++ Knowledge to build a simple "Driving Car" Game that allows users to navigate, direct cars so that it will not crash into obstacles. 
 ## Features: 
+* Display scrolling Background 
+* Display Player's car
+* Allow user to navigate car, move forward, backward, to the right, to the left, rotate. 
+* Display many cars in the opposite direction (obstacles)
+* Sound Background
 
-##

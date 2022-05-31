@@ -11,6 +11,9 @@ You can find the detailed information about my C++ Project in the following part
 
 # C++ 2D Game Project
 This project is part of my C++ learning journey and you can use it as a reference in case you want to build such a GUI Game using SDL2 Framework. 
+* The source [code here](https://github.com/NguyetQue1211/FUV_CS308_programming-language/tree/main/Game)
+* [Project demo](https://youtu.be/TSbwywSRN9A)
+* The detailed description: below
 ## Project goals: 
 Apply C++ Knowledge to build a simple "Driving Car" Game that allows users to navigate, direct cars so that it will not crash into obstacles. 
 
@@ -33,4 +36,4 @@ Apply C++ Knowledge to build a simple "Driving Car" Game that allows users to na
 
 ## References
 * [How to make a game in C++ and SDL2 from Scratch](https://www.youtube.com/playlist?list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx)
-* 
+* [C++ crash course a fast paced introduction](https://www.amazon.com/C-Crash-Course-Josh-Lospinoso/dp/1593278888)
